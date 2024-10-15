@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo-fisi.png" alt="Logo de FISI" class="logo-FISI-IZQ">
+        </div>
+        <div class="logo">
+            <img src="/img/logo-unmsm.png" alt="Logo de UNMSM" class="logo-UNMSM-DER">
+        </div>
+    </header>
+
+    <main>
+        <div class="background">
+            <div class="container">
+                <div class="form-container">
+                    <h1>Iniciar Sesión</h1>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="opciones">Usuario</label>
+                            <select id="opciones" required>
+                                <option value=""> Selecciona una opción </option>
+                                <option value="opcion1">Estudiante</option>
+                                <option value="opcion2">Docente</option>
+                                <option value="opcion3">Administrador</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Recordar contraseña</label>
+                        </div>
+                        <button type="submit">Ingresar</button>
+                    </form>
+                    <p>¿No tienes cuenta? <a href="#">Crear una</a></p>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Empresa. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/login.js"></script>
+</body>
+</html>

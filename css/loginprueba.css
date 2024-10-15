@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total de los elementos */
+}
+
+html, body {
+    height: 100%; /* Asegura que el html y el body ocupen toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    min-height: 100vh; /* Permite que el body ocupe toda la altura de la ventana */
+}
+
+header {
+    background-color: #333; /* Color de fondo del header */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centra el texto en el encabezado */
+    position: sticky; /* Mantiene el header en la parte superior */
+    top: 0; /* Asegura que el header esté en la parte superior */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+}
+
+.background {
+    background-image: url('../img/pregrado.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    flex: 1; /* Permite que la sección ocupe el espacio restante */
+    display: flex; /* Permite centrar el contenido interno */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad para ver la imagen de fondo */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ancho del formulario */
+    margin: 0; /* Elimina el margen */
+}
+
+.form-container {
+    max-width: 100%; /* Asegura que el contenedor del formulario ocupe todo el ancho */
+    margin: 0; /* Elimina el margen */
+    padding: 20px; /* Espacio interno del formulario */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white;
+    padding: 10px;
+    text-align: center; /* Centra el texto en el footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+.logo-FISI-IZQ {
+    float: left; /* Flota la imagen a la izquierda */
+    max-width: 50%; /* Limita el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.logo-UNMSM-DER {
+    float: right; /* Flota la imagen a la derecha */
+    max-width: 50%; /* Limita el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
